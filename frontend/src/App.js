@@ -12,7 +12,7 @@ import { authActions } from "./store";
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => { 
-    const id = sessionStorage.getItem("id");
+    const id = sessionStorage.getItem("id");   
     if (id) {
       dispatch(authActions.login());
     }
