@@ -11,7 +11,7 @@ import { useDispatch } from "react-redux";
 import { authActions } from "./store";
 const App = () => {
   const dispatch = useDispatch();
-  useEffect(() => {
+  useEffect(() => { 
     const id = sessionStorage.getItem("id");
     if (id) {
       dispatch(authActions.login());
